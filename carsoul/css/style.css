@@ -52,17 +52,33 @@ body {
 }
 
 .imagecontainer{
-  width: 70%;
-  height: 400px;
+  height: 70vh;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-  #carouselImg {
-    width: 100%;
-    height: 100%;
-  }
+#carouselImg {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
 /******************************************
-/* ADDITIONAL STYLES
+/* button
 /*******************************************/
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  margin: 15px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ff4040;
+}
