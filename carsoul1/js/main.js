@@ -1,9 +1,9 @@
-document.querySelector(".slider");
+const slider = document.querySelector('.slider');
 
-fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
-    .then(res => res.json())
-    .then(data =>{
-        console.log(data)
-        let el = document.querySelector('li').style.background-image;
-        el.url = data.drinks[0].strDrinkThumb;
-    })
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
