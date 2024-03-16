@@ -16,7 +16,27 @@
                 <a class="logo" href="/">
                     <img src="assets/img/logo.png" width="35" height="35" alt="Inc Logo" />
                 </a>
-                <nav class="menu"></nav>
+                <nav class="menu">
+                    <ul class="menu-bar">
+                        <li>
+                            <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-expanded="false">
+                                Browse
+                                <!-- <i class="bx bx-chevron-down" aria-hidden="true"></i> -->
+                            </button>
+                            <div class="dropdown" id="dropdown1"></div>
+                        </li>
+                        <li>
+                            <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-expanded="false">
+                                Discover
+                                <!-- <i class="bx bx-chevron-down" aria-hidden="true"></i> -->
+                            </button>
+                            <div class="dropdown" id="dropdown2"></div>
+                        </li>
+                        <li><a href="/" class="nav-link">Jobs</a></li>
+                        <li><a href="/" class="nav-link">Livestream</a></li>
+                        <li><a href="/" class="nav-link">About</a></li>
+                    </ul>
+                </nav>
             </div>
 
             <div class="nav-end">
@@ -37,6 +57,9 @@
             </div>
         </div>
     </header>
+
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
